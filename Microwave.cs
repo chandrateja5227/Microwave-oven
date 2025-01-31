@@ -10,7 +10,7 @@ namespace Microwave_oven
         public bool DoorOpen { get; private set; }
         public event Action<bool> DoorOpenChanged = delegate { };
         public event EventHandler StartButtonPressed = delegate { };
-        public bool IsHeaterIsOn { get; set; }
+        private bool IsHeaterIsOn { get; set; }
 
         public Microwave()
         {
